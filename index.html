@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Penjana Surat Rasmi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penjana Surat Rasmi</h1>
+        
+        <div class="form-section">
+            <label>Nama Pengirim:</label>
+            <input type="text" id="namaPengirim" placeholder="Nama Penuh Anda">
+            
+            <label>Alamat Pengirim:</label>
+            <textarea id="alamatPengirim" rows="3"></textarea>
+
+            <hr>
+
+            <label>Nama/Jawatan Penerima:</label>
+            <input type="text" id="namaPenerima" placeholder="Contoh: Pengurus Sumber Manusia">
+            
+            <label>Alamat Penerima:</label>
+            <textarea id="alamatPenerima" rows="3"></textarea>
+
+            <label>Tajuk Surat:</label>
+            <input type="text" id="tajukSurat" placeholder="Contoh: PERLETAKAN JAWATAN SEBAGAI...">
+
+            <label>Isi Kandungan:</label>
+            <textarea id="isiSurat" rows="5" placeholder="Tuliskan tujuan utama surat anda di sini..."></textarea>
+            
+            <button onclick="janaSurat()">Jana Surat Sekarang</button>
+        </div>
+
+        <div id="printArea" class="surat-output" style="display:none;">
+            <div id="kertas">
+                </div>
+            <button class="btn-print" onclick="window.print()">Cetak ke PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
