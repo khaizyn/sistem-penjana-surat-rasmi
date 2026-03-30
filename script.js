@@ -21,6 +21,7 @@ function janaSurat() {
             ${penerima}<br>
             ${alamatT.replace(/\n/g, '<br>')}
             <br><br>
+        <div style="text-align: right;">
             <strong>TARIKH: ${tarikhFormat}</strong>
         </div>
         <br>
